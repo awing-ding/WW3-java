@@ -44,6 +44,8 @@ class ClasseMain{
         caisse = PIB+(exCaisse*0.2);
     if (caisse < 10)
         caisse = 10;
+    else;
+    caisse = caisse
     System.out.println("vos caisse sont de " + caisse);
     System.out.println("votre popularité est égale à:" + Popularite);
   }//Fin de la méthode main
