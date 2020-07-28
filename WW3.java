@@ -13,7 +13,7 @@ class ClasseMain{
     int tauxDePertePopularite = sc.nextInt();
     System.out.println("par combien votre population est-elle divisé pour calculer votre popularité (si vous ne savez pas, contactez le staff) ? ");
     int population = sc.nextInt();
-    System.out.println("quel est votre population ? ");
+    System.out.println("quel est votre population en nombre de millions ? ");
     int Musee = sc.nextInt();
     System.out.println("combien de musée avez vous construit ? ");
     int Propagande = sc.nextInt();
@@ -32,7 +32,7 @@ class ClasseMain{
     System.out.println("Combien de popularité les MJ/roll vous ont fait perdre ? ");
     int PopulariteArbitraireGagne = sc.nextInt();
     System.out.println("Combien de popularité les MJ/roll vous ont fait gagner ? ");
-    int Popularite = 75+(Propagande+(Musee*2)+(Cinemas*2)+PopulariteArbitraireGagne)-(5*Nucleaire+PopulariteArbitrairePerdu+(population/tauxDePertePopularite));
+    int Popularite = 75+(Propagande+(Musee*2)+(Cinemas*2)+PopulariteArbitraireGagne)-(5*Nucleaire+PopulariteArbitrairePerdu+(((population*1000000)/tauxDePertePopularite)/1000000));
     int PIB = exCaisse+(Usine*2)+(Nucleaire*6)+(Ferme*4)+(Port*3)+((recettePublique/1000)*annexion);
     if (Popularite <= 40) 
         caisse = PIB-(exCaisse*0.2);
